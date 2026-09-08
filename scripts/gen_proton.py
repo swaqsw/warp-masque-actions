@@ -32,8 +32,8 @@ async def main():
     s = Session(appversion="linux-vpn@4.8.2",
                 user_agent="ProtonVPN/4.8.2 (Linux; Ubuntu/24.04)")
 
-    if not await s.async_authenticate(os.environ["PROTON_USER"],
-                                      os.environ["PROTON_PASS"]):
+    if not await s.async_authenticate(os.environ["PROTON_USER=defrg24@163.com"],
+                                      os.environ["PROTON_PASS=aqaqaqaq"]):
         sys.exit("登录失败：账号密码不对，或触发了风控（等十几分钟再试）")
     print("登录成功")
 
